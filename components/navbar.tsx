@@ -24,21 +24,23 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex justify-evenly items-center fixed top-8 left-1/2 -translate-x-1/2 w-11/12  py-4 duration-300 ${
+      className={`flex justify-between items-center fixed top-8 left-1/2 -translate-x-1/2 w-3/4  py-4 duration-300 ${
         isScrollable
           ? "backdrop-blur-lg bg-white/30 p-2 rounded-md border "
           : ""
       }`}
     >
-      <Image
-        src={"/logo.png"}
-        width={200}
-        height={200}
-        alt="logo"
-        className="w-24 "
-      />
+      <div className="w-1/3">
+        <Image
+          src={"/logo.png"}
+          width={200}
+          height={200}
+          alt="logo"
+          className="w-24 "
+        />
+      </div>
 
-      <div className="flex justify-start items-center gap-8">
+      <div className="flex justify-start items-center gap-12  w-1/3">
         {navItems.map((e, i) => {
           return (
             <Link
@@ -52,7 +54,7 @@ export default function Navbar() {
         })}
       </div>
 
-      <div className="flex items-center gap-12">
+      <div className="flex items-center gap-12 w-1/3">
         <Link
           href={
             "https://docs.google.com/forms/d/e/1FAIpQLSc4XPjHJ3EZDaiDgs5ze1xyVWHnlxpF4fSnHdkzAYxuMl4ABw/viewform"
@@ -68,10 +70,11 @@ export default function Navbar() {
             "https://api.whatsapp.com/send/?phone=%2B919998881729&text&type=phone_number&app_absent=0"
           }
           target="_blank"
+          className="group"
         >
-          <Button className="bg-[#578bfc] rounded-full  text-white hover:bg-[#578bfc] flex gap-2 items-center py-6 cursor-pointer">
+          <Button className="bg-primary-btn rounded-full  text-white hover:bg-primary-btn flex gap-2 items-center py-6 cursor-pointer">
             <p className={`${instrument.className} text-lg`}>Talk to Puch</p>
-            <ArrowRight className=" size-8  text-black rounded-full bg-white p-2" />
+            <ArrowRight className=" size-8  text-black rounded-full bg-white p-2 group-hover:translate-x-2" />
           </Button>
         </Link>
       </div>

@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` max-w-7xl px-4 md:px-0 mx-auto min-h-[1024px] antialiased `}
+        className={` max-w-7xl px-4 md:px-0 mx-auto  bg-linear-to-t from-primary-bg to-secondary-bg antialiased `}
       >
         <Navbar />
         <div className="mt-44 ">{children}</div>

@@ -112,6 +112,12 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme {
+  --color-primary-bg: #f1f6fe;
+  --color-secondary-bg: ##f9fbff;
+  --color-primary-btn: #578bfc;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
