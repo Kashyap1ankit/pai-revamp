@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex justify-between items-center fixed top-8 left-1/2 -translate-x-1/2 w-3/4  py-4 duration-300 ${
+      className={`flex justify-between items-center fixed top-8 left-1/2 -translate-x-1/2 w-3/4  py-4 duration-300 z-50 ${
         isScrollable
           ? "backdrop-blur-lg bg-white/30 p-2 rounded-md border "
           : ""

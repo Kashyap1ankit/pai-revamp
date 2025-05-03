@@ -67,6 +67,7 @@ export default function HeroSection() {
           initial={blurIn.initial}
           animate={blurIn.animate}
           transition={{ delay: 1.0, duration: 1 }}
+          className="w-fit mx-auto"
         >
           <Link
             href={
@@ -75,7 +76,7 @@ export default function HeroSection() {
             target="_blank"
             className="group"
           >
-            <Button className="bg-primary-btn rounded-full text-white hover:bg-primary-btn flex gap-2 items-center py-6 cursor-pointer mx-auto mt-12">
+            <Button className="bg-primary-btn rounded-full text-white hover:bg-primary-btn flex gap-2 items-center py-6 cursor-pointer mt-12">
               <p className={`${instrument.className} text-lg`}>Talk to Puch</p>
 
               <Image
