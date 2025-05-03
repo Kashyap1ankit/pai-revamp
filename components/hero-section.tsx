@@ -13,7 +13,7 @@ export default function HeroSection() {
     <div className="overflow-hidden px-4 sm:px-6">
       {/* Top Bar */}
       <motion.div
-        className="flex flex-wrap justify-center gap-4 sm:gap-6 items-center  bg-white shadow-xl w-full sm:w-fit rounded-full mx-auto"
+        className="flex justify-center gap-4 sm:gap-6 items-center  bg-white shadow-xl w-full sm:w-fit rounded-full mx-auto px-2 md:px-6 py-2 md:py-4"
         initial={blurIn.initial}
         animate={blurIn.animate}
       >
