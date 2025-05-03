@@ -30,7 +30,7 @@ export default function Navbar() {
           : ""
       }`}
     >
-      <div className="w-1/3">
+      <Link href={"/"} className="w-1/3">
         <Image
           src={"/logo.png"}
           width={200}
@@ -38,7 +38,7 @@ export default function Navbar() {
           alt="logo"
           className="w-24 "
         />
-      </div>
+      </Link>
 
       <div className="flex justify-start items-center gap-12  w-1/3">
         {navItems.map((e, i) => {

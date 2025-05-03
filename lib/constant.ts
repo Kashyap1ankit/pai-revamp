@@ -5,11 +5,11 @@ export const navItems = [
   },
   {
     name: "Pricing",
-    link: "/pricing",
+    link: "#pricing",
   },
   {
     name: "Contact",
-    link: "/contact",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSc4XPjHJ3EZDaiDgs5ze1xyVWHnlxpF4fSnHdkzAYxuMl4ABw/viewform",
   },
 ];
 

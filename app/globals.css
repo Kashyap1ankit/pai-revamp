@@ -113,9 +113,9 @@
 }
 
 @theme {
-  --color-primary-bg: #f1f6fe;
-  --color-secondary-bg: ##f9fbff;
-  --color-primary-btn: #578bfc;
+  --color-primary-bg: #e6f2ed;
+  --color-secondary-bg: #f9fbff;
+  --color-primary-btn: #538a5e;
 }
 
 @layer base {

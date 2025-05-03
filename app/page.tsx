@@ -1,4 +1,5 @@
 import FAQ from "@/components/faq";
+import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import Pricing from "@/components/pricing";
 import QrDialog from "@/components/qr-dialog";
@@ -11,6 +12,7 @@ export default function Home() {
       <WhyPuch />
       <Pricing />
       <FAQ />
+      <Footer />
       <QrDialog />
     </div>
   );
