@@ -11,15 +11,15 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden px-4 sm:px-6">
       {/* Top Bar */}
       <motion.div
-        className="flex justify-start gap-6 items-center px-6 py-2 bg-white shadow-xl w-fit rounded-full mx-auto"
+        className="flex flex-wrap justify-center gap-4 sm:gap-6 items-center px-4 sm:px-6 py-2 bg-white shadow-xl w-full sm:w-fit rounded-full mx-auto"
         initial={blurIn.initial}
         animate={blurIn.animate}
       >
         <motion.div
-          className="flex flex-row items-center justify-center"
+          className="flex items-center justify-center"
           initial={blurIn.initial}
           animate={blurIn.animate}
           transition={{ delay: 0.2, duration: 1 }}
@@ -36,7 +36,7 @@ export default function HeroSection() {
             href="https://api.whatsapp.com/send/?phone=%2B919998881729&text&type=phone_number&app_absent=0"
             target="_blank"
           >
-            <p className={`${instrument.className}`}>
+            <p className={`${instrument.className} text-sm sm:text-base`}>
               Chat in 22 Indian Language
             </p>
           </Link>
@@ -44,47 +44,46 @@ export default function HeroSection() {
       </motion.div>
 
       <motion.div
-        className="mt-12 text-center"
+        className="mt-12 text-center px-4"
         initial={blurIn.initial}
         animate={blurIn.animate}
         transition={{ delay: 0.6, duration: 1 }}
       >
-        <p className={`${space.className} text-7xl`}>
+        <p className={`${space.className} text-3xl sm:text-5xl lg:text-7xl`}>
           Kuch bhi ho, bas AI se <span className="text-primary-btn">Puch!</span>
         </p>
 
         <motion.p
-          className={`${instrument.className} text-xl mt-8 w-1/2 mx-auto text-gray-600`}
+          className={`${instrument.className} text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 max-w-xl sm:max-w-2xl mx-auto text-gray-600`}
           initial={blurIn.initial}
           animate={blurIn.animate}
           transition={{ delay: 0.8, duration: 1 }}
         >
-          India&apos;s first AI assistant jo har samay aapki sewa mein hai Aapka
-          dost, aapka assistant, aapka AI
+          India&apos;s first AI assistant jo har samay aapki sewa mein hai –
+          Aapka dost, aapka assistant, aapka AI.
         </motion.p>
 
         <motion.div
           initial={blurIn.initial}
           animate={blurIn.animate}
           transition={{ delay: 1.0, duration: 1 }}
-          className="w-fit mx-auto"
+          className="w-full sm:w-fit mx-auto"
         >
           <Link
-            href={
-              "https://api.whatsapp.com/send/?phone=%2B919998881729&text&type=phone_number&app_absent=0"
-            }
+            href="https://api.whatsapp.com/send/?phone=%2B919998881729&text&type=phone_number&app_absent=0"
             target="_blank"
-            className="group"
+            className="group inline-block"
           >
-            <Button className="bg-primary-btn rounded-full text-white hover:bg-primary-btn flex gap-2 items-center py-6 cursor-pointer mt-12">
-              <p className={`${instrument.className} text-lg`}>Talk to Puch</p>
-
+            <Button className="bg-primary-btn rounded-full text-white hover:bg-primary-btn flex gap-2 items-center py-4 px-6 sm:py-6 sm:px-8 mt-10">
+              <p className={`${instrument.className} text-base sm:text-lg`}>
+                Talk to Puch
+              </p>
               <Image
-                src={"/whatsapp.svg"}
+                src="/whatsapp.svg"
                 width={200}
                 height={200}
                 alt="whatsapp"
-                className="size-8 rounded-full bg-white p-2 group-hover:scale-110"
+                className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-white p-1 sm:p-2 group-hover:scale-110"
               />
             </Button>
           </Link>

@@ -10,7 +10,7 @@ export default function QrDialog() {
   const [showQR, setShowQR] = useState(false);
 
   return (
-    <div className="fixed right-12 bottom-12 flex flex-col items-end z-50">
+    <div className="fixed right-6 md:right-12 bottom-12 flex flex-col items-end z-50">
       <AnimatePresence>
         {showQR && (
           <motion.div

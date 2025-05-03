@@ -16,28 +16,27 @@ export default function FAQ() {
       initial={sideward.initial}
       whileInView={sideward.animate}
       viewport={{ once: true }}
-      className=" w-3/4  mx-auto"
+      className="w-full max-w-4xl mx-auto px-4 mb-20"
     >
-      <p className={`${space.className} text-5xl text-center`}>
-        Frequently Asked <span className="text-primary-btn"> Questions</span>
+      <p className={`${space.className} text-4xl sm:text-5xl text-center`}>
+        Frequently Asked <span className="text-primary-btn">Questions</span>
       </p>
 
-      <Accordion type="single" collapsible className="w-full mt-20 ">
-        {faq &&
-          faq.map((e, i) => {
-            return (
-              <AccordionItem value={`item-${i + 1}`} key={i}>
-                <AccordionTrigger className={`${space.className} text-xl`}>
-                  {e.question}
-                </AccordionTrigger>
-                <AccordionContent
-                  className={`${instrument.className} text-gray-500`}
-                >
-                  {e.answer}
-                </AccordionContent>
-              </AccordionItem>
-            );
-          })}
+      <Accordion type="single" collapsible className="w-full mt-12 sm:mt-20">
+        {faq?.map((e, i) => (
+          <AccordionItem value={`item-${i + 1}`} key={i}>
+            <AccordionTrigger
+              className={`${space.className} text-lg sm:text-xl`}
+            >
+              {e.question}
+            </AccordionTrigger>
+            <AccordionContent
+              className={`${instrument.className} text-gray-500`}
+            >
+              {e.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
       </Accordion>
     </motion.div>
   );

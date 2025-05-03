@@ -1,4 +1,4 @@
-import { instrument, space } from "@/lib/fonts";
+import { space } from "@/lib/fonts";
 import {
   ChevronRight,
   Instagram,
@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="mb-12 px-4 sm:px-6 lg:px-8">
-      <div className="mt-6 flex flex-col sm:flex-row justify-between items-center gap-6">
+      <div className=" flex flex-col sm:flex-row justify-between items-center gap-6">
         <Image
           src={"/logo.png"}
           width={100}
@@ -24,38 +24,39 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-8">
           <div className="flex gap-6">
             <Link href={"https://x.com/puch_ai"} aria-label="Twitter">
-              <TwitterIcon className="" />
+              <TwitterIcon />
             </Link>
             <Link
               href={"https://www.linkedin.com/company/puch-ai/"}
               aria-label="LinkedIn"
             >
-              <Linkedin className="" />
+              <Linkedin />
             </Link>
             <Link
               href={"https://www.instagram.com/officialpuch.ai/"}
-              aria-label="LinkedIn"
+              aria-label="Instagram"
             >
-              <Instagram className="" />
+              <Instagram />
             </Link>
           </div>
         </div>
       </div>
-      <hr className="border mt-2 border-zinc-300" />
 
-      <div className="flex justify-between mt-6">
+      <hr className="border mt-6 border-zinc-300" />
+
+      <div className="flex flex-col sm:flex-row justify-between items-center mt-6 gap-6">
         <Link href={"mailto:hello@puch.ai"}>
-          <div className="flex items-center justify-between p-4 rounded-full w-fit gap-4 bg-primary-btn text-white">
+          <div className="flex items-center justify-center p-4 rounded-full w-fit gap-4 bg-primary-btn text-white">
             <Mail />
             <p className={`${space.className}`}>hello@puch.ai</p>
-            <ChevronRight className=" size-4" />
+            <ChevronRight className="size-4" />
           </div>
         </Link>
 
         <div
-          className={`${space.className} flex items-center gap-8 text-gray-500`}
+          className={`${space.className} flex flex-col sm:flex-row items-center gap-4 sm:gap-8 text-gray-500 text-center`}
         >
-          <Link href={"/"}>Terms & Condition</Link>
+          <Link href={"/"}>Terms & Conditions</Link>
           <Link href={"/"}>Privacy Policy</Link>
           <Link
             href={
