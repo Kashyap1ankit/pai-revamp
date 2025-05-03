@@ -71,23 +71,22 @@ export const upward = {
   },
 };
 
-export const texts = [
-  "आपका पसंदीदा खाना कौन सा है?",
-  "তোমার প্রিয় বই কোনটা?",
-  "మీకు ఇష్టమైన సినిమా ఏది?",
-  "तुमचं आवडतं ठिकाण कोणतं आहे?",
-  "உங்கள் பிரியமான பாடல் எது?",
-  "તમારું મનપસંદ ઋતુ કયું છે?",
-  "ನಿಮಗೆ ಯಾವ ಹಬ್ಬ ಹೆಚ್ಚು ಇಷ್ಟ?",
-  "നിന്റെ പ്രിയപ്പെട്ട വിധേയനായത് ആരാണ്?",
-  "ਤੈਨੂੰ ਕਿਹੜਾ ਖੇਡ ਸਭ ਤੋਂ ਵਧੀਆ ਲੱਗਦਾ ਹੈ?",
-  "ତୁମର ପ୍ରିୟ ଅଭିନେତା କିଏ?",
-  "آپ کو کون سی کتاب سب سے زیادہ پسند ہے؟",
-  "তোমাৰ প্ৰিয় গীত কোনটো?",
-  "तुका किते आवडता खाणां आसा?",
-  "तोहर प्रिय त्योहार के छै?",
-  "त्वं किं पठसि?",
-];
+export const sideward = {
+  initial: {
+    opacity: 0,
+    x: -50,
+    filter: "blur(5px)",
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 1,
+      ease: "easeOut",
+    },
+  },
+};
 
 export const whyPuch = [
   {
@@ -112,35 +111,58 @@ export const whyPuch = [
   },
 ];
 
-export const explore = [
+export const faq = [
   {
-    title: "WhatsApp-Based AI Assistant",
-    description:
-      "Puch.AI operates entirely through WhatsApp, removing the need for any extra apps and ensuring easy access for all users.",
+    question: "What is Puch.AI?",
+    answer:
+      "Puch.AI is India’s first AI-powered WhatsApp assistant that provides real-time information, fact-checking, updates, and support in multiple Indian languages.",
   },
   {
-    title: "Comprehensive Indic Language Support",
-    description:
-      "Supports multiple Indian languages like Hindi, Bengali, Tamil, Telugu, Marathi, and more, allowing users to interact in their native languages.",
+    question: "How can I start using Puch.AI?",
+    answer:
+      "You can start using Puch.AI by simply sending a message to their official WhatsApp number. No app downloads or sign-ups are required.",
   },
   {
-    title: "Instant Fact-Checking",
-    description:
-      "Users can forward messages for verification, and Puch.AI will cross-check with trusted sources to detect misinformation instantly.",
+    question: "Is Puch.AI free to use?",
+    answer:
+      "Yes, Puch.AI is completely free to use for all users and offers 24/7 availability.",
   },
   {
-    title: "Natural Voice Responses",
-    description:
-      "Provides realistic voice replies in Indian languages with proper pronunciation and tone, making interactions more accessible.",
+    question: "Which languages does Puch.AI support?",
+    answer:
+      "Puch.AI supports multiple Indian languages including Hindi, Bengali, Marathi, Tamil, Telugu, Malayalam, Kannada, Gujarati, Punjabi, and Oriya.",
   },
   {
-    title: "Live IPL Updates",
-    description:
-      "Delivers real-time IPL match updates including commentary, scores, and stats in the user’s preferred language.",
+    question: "Can I use Puch.AI to verify forwarded WhatsApp messages?",
+    answer:
+      "Yes, you can forward any message to Puch.AI, and it will instantly check for misinformation by comparing it with trusted sources.",
   },
   {
-    title: "Free and Always Available",
-    description:
-      "The assistant is completely free to use and is available 24/7 for queries and support.",
+    question: "Does Puch.AI store my personal data?",
+    answer:
+      "No, Puch.AI is designed with privacy in mind and does not store any personal user data from your chats.",
   },
+  {
+    question: "What kind of updates can I get from Puch.AI?",
+    answer:
+      "You can get updates on a variety of topics like live IPL scores, news summaries, general knowledge, government schemes, and more—all through WhatsApp.",
+  },
+];
+
+export const texts = [
+  "आपका पसंदीदा खाना कौन सा है?",
+  "তোমার প্রিয় বই কোনটা?",
+  "మీకు ఇష్టమైన సినిమా ఏది?",
+  "तुमचं आवडतं ठिकाण कोणतं आहे?",
+  "உங்கள் பிரியமான பாடல் எது?",
+  "તમારું મનપસંદ ઋતુ કયું છે?",
+  "ನಿಮಗೆ ಯಾವ ಹಬ್ಬ ಹೆಚ್ಚು ಇಷ್ಟ?",
+  "നിന്റെ പ്രിയപ്പെട്ട വിധേയനായത് ആരാണ്?",
+  "ਤੈਨੂੰ ਕਿਹੜਾ ਖੇਡ ਸਭ ਤੋਂ ਵਧੀਆ ਲੱਗਦਾ ਹੈ?",
+  "ତୁମର ପ୍ରିୟ ଅଭିନେତା କିଏ?",
+  "آپ کو کون سی کتاب سب سے زیادہ پسند ہے؟",
+  "তোমাৰ প্ৰিয় গীত কোনটো?",
+  "तुका किते आवडता खाणां आसा?",
+  "तोहर प्रिय त्योहार के छै?",
+  "त्वं किं पठसि?",
 ];

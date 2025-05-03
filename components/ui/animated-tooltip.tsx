@@ -47,7 +47,7 @@ export const AnimatedTooltip = ({
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence mode="popLayout">
-            {hoveredIndex === item.id && (
+            {/* {hoveredIndex === item.id && (
               <motion.div
                 initial={{ opacity: 0, y: 20, scale: 0.6 }}
                 animate={{
@@ -75,10 +75,10 @@ export const AnimatedTooltip = ({
                 </div>
                 <div className="text-xs text-white">{item.designation}</div>
               </motion.div>
-            )}
+            )} */}
           </AnimatePresence>
           <img
-            onMouseMove={handleMouseMove}
+            // onMouseMove={handleMouseMove}
             height={100}
             width={100}
             src={item.image}
