@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import {
-  motion,
   useTransform,
   AnimatePresence,
   useMotionValue,
@@ -19,27 +18,23 @@ export const AnimatedTooltip = ({
     image: string;
   }[];
 }) => {
+  //eslint-disable-next-line
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const springConfig = { stiffness: 100, damping: 5 };
   const x = useMotionValue(0); // going to set this value on mouse move
   // rotate the tooltip
-  const rotate = useSpring(
-    useTransform(x, [-100, 100], [-45, 45]),
-    springConfig
-  );
+  useSpring(useTransform(x, [-100, 100], [-45, 45]), springConfig);
   // translate the tooltip
-  const translateX = useSpring(
-    useTransform(x, [-100, 100], [-50, 50]),
-    springConfig
-  );
-  const handleMouseMove = (event: any) => {
+  useSpring(useTransform(x, [-100, 100], [-50, 50]), springConfig);
+  //eslint-disable-next-line
+  (event: any) => {
     const halfWidth = event.target.offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
   };
 
   return (
     <>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <div
           className="group relative -mr-4"
           key={item.name}

@@ -5,7 +5,6 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { blurIn, people } from "@/lib/constant";
 import { instrument, space } from "@/lib/fonts";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
