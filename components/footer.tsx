@@ -1,12 +1,17 @@
-import { instrument } from "@/lib/fonts";
-import { Instagram, Linkedin, TwitterIcon } from "lucide-react";
+import { instrument, space } from "@/lib/fonts";
+import {
+  ChevronRight,
+  Instagram,
+  Linkedin,
+  Mail,
+  TwitterIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="mb-12 px-4 sm:px-6 lg:px-8">
-      <hr className="border" />
       <div className="mt-6 flex flex-col sm:flex-row justify-between items-center gap-6">
         <Image
           src={"/logo.png"}
@@ -34,6 +39,31 @@ export default function Footer() {
               <Instagram className="" />
             </Link>
           </div>
+        </div>
+      </div>
+      <hr className="border mt-2 border-zinc-300" />
+
+      <div className="flex justify-between mt-6">
+        <Link href={"mailto:hello@puch.ai"}>
+          <div className="flex items-center justify-between p-4 rounded-full w-fit gap-4 bg-primary-btn text-white">
+            <Mail />
+            <p className={`${space.className}`}>hello@puch.ai</p>
+            <ChevronRight className=" size-4" />
+          </div>
+        </Link>
+
+        <div
+          className={`${space.className} flex items-center gap-8 text-gray-500`}
+        >
+          <Link href={"/"}>Terms & Condition</Link>
+          <Link href={"/"}>Privacy Policy</Link>
+          <Link
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSc4XPjHJ3EZDaiDgs5ze1xyVWHnlxpF4fSnHdkzAYxuMl4ABw/viewform"
+            }
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </footer>
