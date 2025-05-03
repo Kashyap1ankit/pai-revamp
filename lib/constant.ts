@@ -166,3 +166,42 @@ export const texts = [
   "तोहर प्रिय त्योहार के छै?",
   "त्वं किं पठसि?",
 ];
+
+export const pricing = [
+  {
+    plan: "Personal Plan",
+    BestFor: "Best for Individual",
+    tier: "Free",
+    price: "Starting at ₹0/month",
+    description: "Access Puch.AI core features with no cost.",
+    features: [
+      { title: "Unlimited WhatsApp access", applicable: true },
+
+      { title: "Instant fact-checking", applicable: true },
+      { title: "Live IPL & news updates", applicable: true },
+      { title: "Voice-based replies", applicable: true },
+      { title: "24/7 availability", applicable: true },
+      { title: "Customizable voice assistants", applicable: false },
+      { title: "Early access to new features", applicable: false },
+      { title: "Personalized daily briefs", applicable: false },
+    ],
+  },
+  {
+    plan: "Team Plan",
+    BestFor: "Best for your Team",
+    tier: "Pro (Coming Soon)",
+    price: "Coming Soon",
+    description: "Unlock enhanced capabilities for power users.",
+    features: [
+      { title: "Unlimited WhatsApp access", applicable: true },
+
+      { title: "Instant fact-checking", applicable: true },
+      { title: "Live IPL & news updates", applicable: true },
+      { title: "Voice-based replies", applicable: true },
+      { title: "24/7 availability", applicable: true },
+      { title: "Customizable voice assistants", applicable: true },
+      { title: "Early access to new features", applicable: true },
+      { title: "Personalized daily briefs", applicable: true },
+    ],
+  },
+];

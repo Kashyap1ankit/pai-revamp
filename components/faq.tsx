@@ -19,7 +19,7 @@ export default function FAQ() {
       className=" w-3/4  mx-auto"
     >
       <p className={`${space.className} text-5xl text-center`}>
-        Explore Our Core <span className="text-primary-btn">Features</span>
+        Frequently Asked <span className="text-primary-btn"> Questions</span>
       </p>
 
       <Accordion type="single" collapsible className="w-full mt-20 ">
