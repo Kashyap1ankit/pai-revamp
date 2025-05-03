@@ -16,7 +16,7 @@ export default function FAQ() {
       initial={sideward.initial}
       whileInView={sideward.animate}
       viewport={{ once: true }}
-      className="w-full max-w-4xl mx-auto px-4 mb-20"
+      className="w-full max-w-4xl mx-auto px-4"
     >
       <p className={`${space.className} text-4xl sm:text-5xl text-center`}>
         Frequently Asked <span className="text-primary-btn">Questions</span>

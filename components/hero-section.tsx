@@ -13,7 +13,7 @@ export default function HeroSection() {
     <div className="overflow-hidden px-4 sm:px-6">
       {/* Top Bar */}
       <motion.div
-        className="flex flex-wrap justify-center gap-4 sm:gap-6 items-center px-4 sm:px-6 py-2 bg-white shadow-xl w-full sm:w-fit rounded-full mx-auto"
+        className="flex flex-wrap justify-center gap-4 sm:gap-6 items-center  bg-white shadow-xl w-full sm:w-fit rounded-full mx-auto"
         initial={blurIn.initial}
         animate={blurIn.animate}
       >
@@ -21,7 +21,7 @@ export default function HeroSection() {
           className="flex items-center justify-center"
           initial={blurIn.initial}
           animate={blurIn.animate}
-          transition={{ delay: 0.2, duration: 1 }}
+          transition={{ delay: 0.2, duration: 1.2 }}
         >
           <AnimatedTooltip items={people} />
         </motion.div>
@@ -43,12 +43,12 @@ export default function HeroSection() {
       </motion.div>
 
       <motion.div
-        className="mt-12 text-center px-4"
+        className="mt-12 text-center"
         initial={blurIn.initial}
         animate={blurIn.animate}
         transition={{ delay: 0.6, duration: 1 }}
       >
-        <p className={`${space.className} text-3xl sm:text-5xl lg:text-7xl`}>
+        <p className={`${space.className} text-4xl sm:text-5xl lg:text-7xl`}>
           Kuch bhi ho, bas AI se <span className="text-primary-btn">Puch!</span>
         </p>
 
@@ -73,7 +73,7 @@ export default function HeroSection() {
             target="_blank"
             className="group inline-block"
           >
-            <Button className="bg-primary-btn rounded-full text-white hover:bg-primary-btn flex gap-2 items-center py-4 px-6 sm:py-6 sm:px-8 mt-10">
+            <Button className="bg-primary-btn rounded-full text-white hover:bg-primary-btn flex gap-2 items-center py-6 px-8 mt-10">
               <p className={`${instrument.className} text-base sm:text-lg`}>
                 Talk to Puch
               </p>

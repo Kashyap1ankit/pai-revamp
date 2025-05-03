@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mb-12 px-4 sm:px-6 lg:px-8">
+    <div className=" px-4 sm:px-6 lg:px-8">
       <div className=" flex flex-col sm:flex-row justify-between items-center gap-6">
         <Image
           src={"/logo.png"}
@@ -67,6 +67,6 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
