@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { blurIn, people } from "@/lib/constant";
-import { instrument, space } from "@/lib/fonts";
+import { instrument, samarank, space } from "@/lib/fonts";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -49,7 +49,10 @@ export default function HeroSection() {
         transition={{ delay: 0.6, duration: 1 }}
       >
         <p className={`${space.className} text-4xl sm:text-5xl lg:text-7xl`}>
-          Kuch bhi ho, bas AI se <span className="text-primary-btn">Puch!</span>
+          Kuch bhi ho, bas AI se{" "}
+          <span className={`text-primary-btn ${samarank.className}`}>
+            Puch!
+          </span>
         </p>
 
         <motion.p
